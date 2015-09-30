@@ -64,7 +64,7 @@ PS.: Вы так же можете импортировать товары в с
 
 Пример:
 
-![Фотография XML файла с товарами](https://raw.githubusercontent.com/idem84/download_price.sh/master/3.jpg)
+![Фотография XML файла с товарами](https://raw.githubusercontent.com/idem84/download_price.sh/master/3a.jpg)
 
 Фотографии админки битрикса:
 
