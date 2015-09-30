@@ -57,4 +57,6 @@ Esc
 Если Все прошло как надо, в админке битрикса Вы увидите что создался каталог с товарами:
 PS.: Вы так же можете импортировать товары в существующий каталог, для этого необходимо в файлах XML указать ID каталога (Внешний код)
 
-![Фотография админки битрикса](https://github.com/jon/idem84/download_price.sh/master/image/1.jpg)
+![Фотография админки битрикса](https://raw.githubusercontent.com/idem84/download_price.sh/master/1.jpg)
+
+![Фотография админки битрикса 2](https://raw.githubusercontent.com/idem84/download_price.sh/master/2.jpg)
