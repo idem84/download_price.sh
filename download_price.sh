@@ -12,7 +12,7 @@ status2=$(curl -s --head -w %{http_code} http://93.158.134.3/3WXML_offers.xml -o
 if [ "$status" = "$HEADER" ] && [ "$status2" = "$HEADER" ]
 then
 	echo "1. Начало выгрузки, проверка файлов!"
-	#Получение даты модификации файла находящегося в офисе в формате: Tue, 22 Sep 2015 14:51:56
+	#Получение даты модификации файла находящегося в офисе в формате: Tue, 23 Sep 2015 14:51:56
 	OFFICE_FILE_DATE=`/usr/bin/curl -s -I "http://93.158.134.3/3WXML.xml" | awk '/^Last-Modified:/ { DATE=$3 " " $4 " " $5 " " $6 " " $7 ; system( "date -d \""  DATE "\" \"+%a, %d %b %Y %H:%M:%S\"" ) }'`;
 	echo "2. Дата модицикации файла из офиса: $OFFICE_FILE_DATE"
 
