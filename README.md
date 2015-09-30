@@ -42,6 +42,14 @@ chmod +x /home/bitrix/www/site.ru/1c_catalog/download_price.sh
 
 ### Шаг четвертый 4:
 
-Создайте cron задачу для запуска файла **download_price.sh**
+Создайте cron задачу для запуска файла **download_price.sh** под нужным пользователем или через панель управления сервером.
 
+````html
+crontab -u bitrix -e
+i
+*/3 * * * * /home/bitrix/ext_www/podarki-v-mode.ru/upload/1c_catalog/download_price.sh
+Esc
+:wq
+````
 
+В данном примере указано что скрипт будет запускаться каждые 3 минуты. Если все настроено правильно, то в папке **files_from_office** должны появится 2 файла 3WXML.xml и 3WXML_offers.xml, далее в папке **1c_catalog** должны появится 3 новых файла: import.xml, offers.xml и last_date.
